@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey form</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/icomoon.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width" initial-scale="1.02" ,="" maximum-scale="1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+	<body>
+		<div class="survey-container">
+			<div class="index-page text-center">
+				<img src="truck.svg" width="130">
+				<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+				<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+				<div class="survey_btn">Start the survey</div>
+			</div>
+			<form enctype="multipart/form-data" id="survey-form" style="display:none">
+				<div>
+					<h3>Transport Basic Details</h3>
+					<section class="survey-wrapper" id="list-1">
+						<!-- <h4>Transport Basic Details</h4> -->
+						<div class="survey-list clear">
+							<div class="form-group clear">
+								<label class="control-label">Name</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="Name" autocomplete="off"> 
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Transporter Company Name</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="Transporter_Company_Name" autocomplete="off"> 
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Mobile Number</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="Mobile_Number" autocomplete="off"> 
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Office Address</label>
+								<div class="sampleform_input ">
+									<textarea class="form-control" rows="3" id="comment" name="Office_Address"></textarea>
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">No of trucks owned</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="Trucks_owned" autocomplete="off"> 
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">No of Trucks attached</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="Truck_attached" autocomplete="off"> 
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Truck Type</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="Truck_type" autocomplete="off"> 
+								</div>
+							</div>
+						</div>
+					</section>
+					<h3>Area of Operations</h3>
+					<section class="survey-wrapper" id="list-2">
+					<!-- <h4>Area of Operations</h4> -->
+						<div class="survey-list">
+							<div class="form-group clear">
+								<br/><br/>
+							</div>
+							<div class="form-group clear">
+								<br/><br/>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Long Route/Inter City/Intera City</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="operation_route" autocomplete="off"> 
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Preferred Routes</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control required" value="" name="preferred_routes">
+								</div>
+							</div>
+						</div>
+					</section>
+					<h3>Operational Details</h3>
+					<section class="survey-wrapper" id="list-3">
+					<!-- <h4>Operational Details</h4> -->
+						<div class="survey-list">
+							<div class="form-group clear">
+								<br/><br/>
+							</div>
+							<div class="form-group clear">
+								<br/><br/>
+							</div>
+							<div class="form-group clear radio-wrapper">
+								<div class="clear sampleform_input">
+									<div class="radio clear">
+								      <label class="control-label">Booking Agent</label>
+								      <input type="radio" name="optradio" data-radio="booking" >
+								    </div>
+								    <div class="radio clear">
+								      <label class="control-label">Direct Order</label>
+								      <input type="radio" name="optradio" data-radio="direct">
+								    </div>
+								    <div class="radio clear">
+								      <label class="control-label">Attached with any transporter</label>
+								      <input type="radio" name="optradio" data-radio="attached">
+								    </div>
+								    <div class="radio clear">
+								      <label class="control-label">Truck aggregator</label>
+								      <input type="radio" name="optradio" data-radio="aggregator">
+								    </div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<h3>Operational Details</h3>
+					<section class="survey-wrapper" id="list-4">
+					<!-- <h4>Operational Details</h4> -->
+							<div class="form-group clear">
+								<br/><br/>
+							</div>
+						<div class="survey-list" id="booking">
+							<div class="form-group clear">
+								<label class="control-label">Name of the booking agent</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="booking_agent">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">contact details</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="contact_details">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">No of load requirements per month</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="load_requirement">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Payement Structure</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="payment_structure">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Return Load</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="booking_return_load">
+								</div>
+							</div>
+						</div>
+						<div class="survey-list" id="direct">
+							<div class="form-group clear">
+								<label class="control-label">Name of the company</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="direct_company_name">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Material</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="direct_material">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">No of load requirements per month</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="direct_load_requirement">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Payement Structure</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="direct_payment_structure">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Return Load</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="direct_return_load">
+								</div>
+							</div>
+						</div>
+						<div class="survey-list" id="attached">
+							<div class="form-group clear">
+								<label class="control-label">Name of the transporter</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="attached_transporter_name">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">No of own trucks attached</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="attached_own_trucks">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Material</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="attached_material">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">No of load requirements per month</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="attached_load_requirement">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Payement Structure</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="attached_payment_structure">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Return Load</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="attached_return_load">
+								</div>
+							</div>
+						</div>
+						<div class="survey-list" id="aggregator">
+							<div class="form-group clear">
+								<label class="control-label">Name of the website</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="aggregator_website_name">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Web/App</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="aggregator_webapp">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Customer acquisition(call, in-site)</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="aggregator_customer_acquisition">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Payement Structure</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="aggregator_payment_structure">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Return Load</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="aggregator_return_load">
+								</div>
+							</div>
+						</div>
+					</section>
+					<h3>Permit Details</h3>
+					<section class="survey-wrapper" id="list-5">
+						<div class="survey-list">
+							<div class="form-group clear">
+								<br/><br/>
+							</div>
+							<div class="form-group clear">
+								<br/><br/>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Association Name</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="association_name">
+								</div>
+							</div>
+							<div class="form-group clear">
+								<label class="control-label">Contact Details</label>
+								<div class="sampleform_input ">
+									<input type="text" class="form-control" value="" name="permit_contact_details">
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</form>
+			<div class="thank-you text-center" style="display:none">
+				<img src="truck.svg" width="130">
+				<h2>Thank you</h2>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="jquery.steps.min.js"></script>
+		<script type="text/javascript" src="jquery.validate.min.js"></script>
+		<script type="text/javascript" src="survey.js"></script>
+	</body>
+</html>
